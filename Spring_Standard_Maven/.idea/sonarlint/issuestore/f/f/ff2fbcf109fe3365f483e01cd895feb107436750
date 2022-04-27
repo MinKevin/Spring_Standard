@@ -1,0 +1,9 @@
+
+:
+java:S3751"Make this method non "private".(Ήώηρώÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(τ§ϊ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(έ–ªt
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•½κωÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ΧΊ’ούÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(έ–ªt8ζ¦Ε¶†0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΥµΉωÿÿÿÿ
