@@ -10,15 +10,19 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+<!--원격프로그램 등록-->
     <servlet>
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+
+<!--원격프로그램 URL 맵핑-->
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>/WEB-INF/hi.jsp</welcome-file>
     </welcome-file-list>

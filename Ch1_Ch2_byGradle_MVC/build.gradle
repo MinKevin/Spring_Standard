@@ -6,6 +6,11 @@ plugins {
 group 'com.spring.fastcampus'
 version '1.0-SNAPSHOT'
 
+//gradle java에 -parameters 옵션 추가
+//https://stackoverflow.com/questions/29048258/store-method-parameter-names-for-some-classes-when-building-with-gradle-java8
+compileJava.options.compilerArgs.add '-parameters'
+compileTestJava.options.compilerArgs.add '-parameters'
+
 repositories {
     mavenCentral()
 }
