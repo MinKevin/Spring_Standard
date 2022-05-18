@@ -28,6 +28,5 @@ public class TwoDice {
         out.println("<img src='img/dice" + idx2 + ".jpg'>");
         out.println("</body>");
         out.println("</html>");
-
     }
 }
