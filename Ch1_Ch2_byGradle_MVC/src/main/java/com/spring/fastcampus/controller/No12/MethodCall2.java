@@ -10,19 +10,23 @@ import java.util.Scanner;
 import org.springframework.ui.Model;
 import org.springframework.validation.support.BindingAwareModelMap;
 
+//model이 view에 적용되는 방법
 public class MethodCall2 {
     public static void main(String[] args) throws Exception{
-
-        Class clazz = Class.forName("com.fastcampus.ch2.YoilTellerMVC");
+        //1. YoilTellerMVC의 객체 생성
+        Class clazz = Class.forName("com.spring.fastcampus.controller.No10.YoilTellerMVC");
         Object obj = clazz.newInstance();
 
+        //2. main메서드의 정보를 가져온다. (뒤에 파라미터가 메서드와 일치해야함!)
         Method main = clazz.getDeclaredMethod("main", int.class, int.class, int.class, Model.class);
 
-        Model model = new BindingAwareModelMap();
+        //3. 모델을 생성 (모델 생성 방법)
+       Model model = new BindingAwareModelMap();
         System.out.println("[before] model="+model);
 
-        // String viewName = obj.main(2021, 10, 1, model);
-        String viewName = (String)main.invoke(obj, new Object[] { 2021, 10, 1, model });
+        //4. main메서드를 호출 (호출하기위해 invoke메서드를 사용)
+        // String viewName = obj.main(2021, 10, 1, model); //아래줄과 같은 코드
+        String viewName = (String)main.invoke(obj, new Object[] { 2021, 10, 1, model });//reflection api를 이용한 호출
         System.out.println("viewName="+viewName);
 
         // Model의 내용을 출력
@@ -36,8 +40,9 @@ public class MethodCall2 {
         String result = "";
 
         // 1. 뷰의 내용을 한줄씩 읽어서 하나의 문자열로 만든다.
-        Scanner sc = new Scanner(new File("src/main/webapp/WEB-INF/views/"+viewName+".jsp"), "utf-8");
+        Scanner sc = new Scanner(new File("src/webapp/WEB-INF/views/"+viewName+".jsp"), "utf-8");
 
+        //한줄 씩 읽어오는 과정
         while(sc.hasNextLine())
             result += sc.nextLine()+ System.lineSeparator();
 

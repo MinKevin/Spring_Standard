@@ -13,6 +13,7 @@ import java.util.Scanner;
 import org.springframework.ui.Model;
 import org.springframework.validation.support.BindingAwareModelMap;
 
+//스프링이 Controller의 Method의 매개변수에 맞게 값들을 model에 저장하고 view에 표현하는 방식 확인
 public class MethodCall3 {
     public static void main(String[] args) throws Exception{
         Map map = new HashMap();
@@ -21,14 +22,14 @@ public class MethodCall3 {
         map.put("day", "1");
 
         Model model = null;
-        Class clazz = Class.forName("com.fastcampus.ch2.YoilTellerMVC");
+        Class clazz = Class.forName("com.spring.fastcampus.controller.No10.YoilTellerMVC");
         Object obj  = clazz.newInstance();
 
         // YoilTellerMVC.main(int year, int month, int day, Model model)
         Method main = clazz.getDeclaredMethod("main", int.class, int.class, int.class, Model.class);
 
-        Parameter[] paramArr = main.getParameters();
-        Object[] argArr = new Object[main.getParameterCount()];
+        Parameter[] paramArr = main.getParameters(); //main 메서드의 매개변수 목록을 가져옴
+        Object[] argArr = new Object[main.getParameterCount()]; //매개변수 갯수와 같은 길이의 Object배열
 
         for(int i=0;i<paramArr.length;i++) {
             String paramName = paramArr[i].getName();
@@ -59,10 +60,13 @@ public class MethodCall3 {
     } // main
 
     private static Object convertTo(Object value, Class type) {
+        //isInstance 객체의 Class를 반환
         if(type==null || value==null || type.isInstance(value)) // 타입이 같으면 그대로 반환
             return value;
 
         // 타입이 다르면, 변환해서 반환
+        //Integer.parseInt({String}) : 기본 int 반환
+        //Integer.valueOf({String}) : Integer 객체 반환
         if(String.class.isInstance(value) && type==int.class) { // String -> int
             return Integer.valueOf((String)value);
         } else if(String.class.isInstance(value) && type==double.class) { // String -> double

@@ -2,6 +2,7 @@ package com.spring.fastcampus.controller.No11;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -34,7 +35,10 @@ public class MethodCall {
 		String result = "";
 
 		// 1. 뷰의 내용을 한줄씩 읽어서 하나의 문자열로 만든다.
-		Scanner sc = new Scanner(new File("src/main/java/com/fastcampus/ch2/No11/"+viewName+".txt"));
+//		String path = System.getProperty("user.dir");
+		String path = Paths.get("").toAbsolutePath().toString();
+		System.out.println("user.dir : " + path);
+		Scanner sc = new Scanner(new File("src/main/java/com/spring/fastcampus/controller/No11/" + viewName+".txt"));
 
 		while(sc.hasNextLine())
 			result += sc.nextLine()+ System.lineSeparator();

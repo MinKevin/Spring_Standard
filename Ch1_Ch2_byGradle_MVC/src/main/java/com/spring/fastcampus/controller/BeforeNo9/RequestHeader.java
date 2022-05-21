@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class RequestHeader {
-    @RequestMapping("/requestHeader")
+    @RequestMapping("/BeforeNo9/requestHeader")
     public void main(HttpServletRequest request) {
 
         Enumeration<String> e = request.getHeaderNames();
