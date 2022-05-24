@@ -11,11 +11,11 @@ import org.springframework.util.StringUtils;
 public class SetterCall {
     public static void main(String[] args) throws Exception{
         Map<String, String> map = new HashMap<>();
-        map.put("year", "2021");
-        map.put("month", "10");
-        map.put("day", "1");
+        map.put("year", "2022");
+        map.put("month", "05");
+        map.put("day", "22");
 
-        Class<?> type = Class.forName("com.fastcampus.ch2.MyDate");
+        Class<?> type = Class.forName("com.spring.fastcampus.dto.No17.MyDate");
 
         // MyDate인스턴스를 생성하고, map의 값으로 초기화한다.
         Object obj = dataBind(map, type);
@@ -74,12 +74,3 @@ public class SetterCall {
         return "set" + StringUtils.capitalize(name); // org.springframework.util.StringUtils
     }
 }
-
-/*
-[실행결과]
-method=public void com.fastcampus.ch2.MyDate.setYear(int)
-method=public void com.fastcampus.ch2.MyDate.setMonth(int)
-method=public void com.fastcampus.ch2.MyDate.setDay(int)
-[private int com.fastcampus.ch2.MyDate.year, private int com.fastcampus.ch2.MyDate.month, private int com.fastcampus.ch2.MyDate.day]
-obj=[year=2021, month=10, day=1]
- */

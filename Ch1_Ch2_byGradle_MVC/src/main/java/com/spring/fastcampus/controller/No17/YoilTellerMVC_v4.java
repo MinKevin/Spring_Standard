@@ -34,24 +34,6 @@ public class YoilTellerMVC_v4 {
         //*3. 계산한 결과를 model에 저장 (model은 view로 자동 전달)
         model.addAttribute("myDate", date);
         model.addAttribute("yoil", yoil);
-
-        // 3. 출력 - jsp파일 새로 생성하여 관심사 분리
-////        System.out.println(year + "년 " + month + "월 " + day + "일은 ");
-////        System.out.println(yoil + "요일입니다.");
-//        response.setContentType("text/html");    // 응답의 형식을 html로 지정
-//        response.setCharacterEncoding("utf-8");  // 응답의 인코딩을 utf-8로 지정
-//        PrintWriter out = response.getWriter();  // 브라우저로의 출력 스트림(out)을 얻는다.
-//        out.println("<html>");
-//        out.println("<head>");
-//        out.println("</head>");
-//        out.println("<body>");
-//        out.println(year + "년 " + month + "월 " + day + "일은 ");
-//        out.println(yoil + "요일입니다.");
-//        out.println("</body>");
-//        out.println("</html>");
-//        out.close();
-
-        //3. 출력 to MVC
         return "No17/yoil";
     }
 

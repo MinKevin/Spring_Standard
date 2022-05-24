@@ -37,5 +37,4 @@ public class PerformanceFilter implements Filter {
     public void destroy() {
         // 정리 작업
     }
-
 }

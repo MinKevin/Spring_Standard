@@ -6,7 +6,7 @@
   <title>JSTL</title>
 </head>
 <body>
-<c:set var="to"   value="10"/>
+<c:set var="to"   value="10" scope="page"/>
 <c:set var="arr"  value="10,20,30,40,50,60,70"/>
 <c:forEach var="i" begin="1" end="${to}">
   ${i}

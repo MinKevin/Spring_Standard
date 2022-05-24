@@ -13,20 +13,20 @@ import java.util.Calendar;
 @Controller
 public class YoilTellerMVC_v2 {
     @ExceptionHandler(Exception.class)
-    public String catcher(Exception ex){
+    public String catcher(Exception ex) {
         ex.printStackTrace();
         return "No17/yoilError";
     }
 
     @RequestMapping("/getYoilMVC_v2") // http://localhost:8085/ch2/getYoilMVC?year=2021&month=10&day=1
     //    public static void main(String[] args) {
-    public String main(@RequestParam(required=true) int year,
-                       @RequestParam(required=true)int month,
-                       @RequestParam(required=true)int day,
+    public String main(@RequestParam(required = true) int year,
+                       @RequestParam(required = true) int month,
+                       @RequestParam(required = true) int day,
                        Model model) throws IOException {
 
         //*1. 유효성 검사
-        if(!isValie(year, month, day))
+        if (!isValie(year, month, day))
             return "No17/yoilError";
 
         // 2. 처리 - *2. MVC과정에서 우클릭 - Refactor - Extract Method

@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/hello", loadOnStartup = 1)
+@WebServlet(urlPatterns = "/hello")
 public class HelloServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
@@ -23,7 +23,7 @@ public class HelloServlet extends HttpServlet {
         //2. 처리
         //3. 출력
         System.out.println("[HelloServlet] service() is called!");
-        System.out.println("/");
+        //System.out.println("/");
     }
 
     @Override

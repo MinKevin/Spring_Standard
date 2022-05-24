@@ -7,7 +7,7 @@
 IntelliJ, Gradle, Spring MVC 개발 환경 구축 TEST
 
 <script>
-    location.href="views/No15/el.jsp";
+    // location.href="views/No15/el.jsp";
 </script>
 </body>
 </html>
