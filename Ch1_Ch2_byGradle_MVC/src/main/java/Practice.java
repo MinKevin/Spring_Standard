@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
@@ -20,5 +21,6 @@ public class Practice {
 //    @RequestMapping(value="/register/add", method=RequestMethod.GET)
     public String register(){
         return "registerForm";
+
     }
 }

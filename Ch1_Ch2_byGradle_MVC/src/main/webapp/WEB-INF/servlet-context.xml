@@ -34,4 +34,21 @@ ex) <mvc:annotation-driven/>, <mvc:resources..../>, <mvc:view-controller/>-->
     <!--GET요청만 허용-->
     <view-controller path="/register/add" view-name="No19/registerForm"/>
 
+    <!--22.05.26-->
+    <!--SimpleMappingExceptionRespolver
+        예외 종류(메서드)에 따라 에러뷰를 설정, 해당 뷰마다 상태 코드를 지정-->
+    <beans:bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <beans:property name="defaultErrorView" value="error"/>
+        <beans:property name="exceptionMappings">
+            <beans:props>
+                <beans:prop key="com.spring.fastcampus.controller.No28.MyException">No28/error400</beans:prop>
+            </beans:props>
+        </beans:property>
+        <beans:property name="statusCodes">
+            <beans:props>
+                <beans:prop key="error400">400</beans:prop>
+            </beans:props>
+        </beans:property>
+    </beans:bean>
+
 </beans:beans>
