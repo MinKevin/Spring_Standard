@@ -17,10 +17,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Practice {
-    @GetMapping("/register/add")
-//    @RequestMapping(value="/register/add", method=RequestMethod.GET)
-    public String register(){
-        return "registerForm";
+    public static void main(String[] args) {
+        String a = "";
+        String[] b = new String[]{"a", "b", "c"};
 
+        System.out.println(a.getClass().getName());
+        System.out.println(b.getClass().getName());
     }
 }
