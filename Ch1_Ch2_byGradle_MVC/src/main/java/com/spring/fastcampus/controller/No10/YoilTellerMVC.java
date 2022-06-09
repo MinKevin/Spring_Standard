@@ -19,18 +19,6 @@ public class YoilTellerMVC {
         if(!isValie(year, month, day))
             return "No10/yoilError";
 
-        // 1. 입력
-//        String year = args[0];
-//        String month = args[1];
-//        String day = args[2];
-//        String year = request.getParameter("year");
-//        String month = request.getParameter("month");
-//        String day = request.getParameter("day");
-
-//        int yyyy = Integer.parseInt(year);
-//        int mm = Integer.parseInt(month);
-//        int dd = Integer.parseInt(day);
-
         // 2. 처리 - *2. MVC과정에서 우클릭 - Refactor - Extract Method
         char yoil = getYoil(year, month, day);
 

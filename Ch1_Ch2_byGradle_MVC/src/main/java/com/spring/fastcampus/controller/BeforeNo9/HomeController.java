@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String homePage(){
-        return "home"; // 응답으로 /WEB-INF/views/home.jsp 를 보냄
+        return "home"; // 응답으로 /views/home.jsp 를 보냄
     }
 }

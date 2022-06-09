@@ -14,19 +14,21 @@ public class Hello {
     static int cv = 20;//static 변수
     @Autowired
     ServletContext servletContext;
-    //2. URL과 메서드를 연결
-    @RequestMapping(value="/hello")
 
-  private String main(){
+    //2. URL과 메서드를 연결
+    @RequestMapping(value = "/hello")
+    private String main() {
         System.out.println("class Hello -> Method private main");
 
         System.out.println(cv);//OK
         System.out.println(iv);//OK
+
+        //이거 뭐였냐...
         System.out.println(servletContext.getRealPath("/resources/img/dice1.jpg"));
-        return "index";
+        return "home";
     }
 
-    public static void main2(){ //static 메서드
+    public static void main2() { //static 메서드
         System.out.println(cv);//OK
 //        System.out.println(iv);//에러
     }
