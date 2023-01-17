@@ -1,0 +1,4 @@
+#key:car, value:com.fastcampus....#
+#car = com.fastcampus.ch3.No1.diCopy1.SportsCar#
+car = com.fastcampus.ch3.No1.diCopy1.Truck
+engine = com.fastcampus.ch3.No1.diCopy1.Engine
