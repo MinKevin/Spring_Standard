@@ -1,0 +1,8 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Êš—…øÿÿÿÿ8ÆıÍÒÛ0
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(³¨Óì8êÛºÒÛ0
+X
+java:S1172("=Remove these unused method parameters "year", "month", "day".(¶ÑËòıÿÿÿÿ
+N
+java:S1144(",Remove this unused private "isValid" method.(¶ÑËòıÿÿÿÿ8Ï‘¸ÒÛ0

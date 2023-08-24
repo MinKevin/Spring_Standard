@@ -1,26 +1,12 @@
 
-C
-web/WEB-INF/web.xml,c\d\cdcc12da5c4054f6995aab32914d7e0243194c05
 I
 Spring_Standard_Maven.iml,a\b\aba3732abdf3ca752264564563406e1fcbe8b884
-f
-6.idea/artifacts/Spring_Standard_Maven_war_exploded.xml,3\6\36fe5436d5c09b1d27bb776fa3d7500f78edb8e7
-R
-"web/WEB-INF/applicationContext.xml,6\1\6174480b9b154240404ccf8a06724626b4651972
 D
 web/Base64-test.html,3\3\33d645d7e2bd3c8c8bd432897554fb35b21a7a29
-P
- web/WEB-INF/views/getYoilMVC.jsp,1\4\143d87a0af432e0f45505c05355e3e0e43a57662
-Z
-*src/main/java/ch2/section01to10/Hello.java,e\9\e9725c8ce9f4de0c17c225b777cca997404f5c15
 =
 web/index.jsp,9\f\9f198ed450f32e45b10ec3c2b1406e609b4a96cd
-H
-src/main/java/ch2/k.java,5\0\50cd42f5068b86050051fb898f48b2894d1ca864
 Y
 )src/main/java/ch2/section01to10/Main.java,0\d\0d438c174c3b14e8e39ae81def58f1da99b5673a
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 f
 6src/main/java/ch2/section01to10/PrivateMethodCall.java,8\9\89113d8ff7e941316dca32a28944dc38d86c9725
 b
@@ -37,5 +23,7 @@ _
 /src/main/java/ch2/section01to10/YoilTeller.java,7\c\7cc7115b440429aa042b0160f42a2480adbfec61
 p
 @src/main/java/ch2/section01to10/YoilTellerMVCbyModelAndView.java,6\7\672c0307b3a9d4a18e65d6c2cdd28b5ea287a63e
-[
-+src/main/java/ch2/section11/MethodInfo.java,d\3\d305e53091ab0b30b4ef65048cd28ffaff80d98a
+f
+6src/main/java/ch2/section01to10/YoilTeller_remote.java,d\7\d72d5bff95ab558cad334623d40051e1e87c872f
+b
+2src/main/java/ch2/section01to10/YoilTellerMVC.java,d\a\dabe0369ed3b4bec7aacd5ead9a48a6ce73ba228
